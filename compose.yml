@@ -1,7 +1,7 @@
 services:
   db:
     image: postgres
-    container_name: local_pgdb
+    container_name: mood-pgdb
     restart: always
     ports:
       - "${POSTGRES_PORT}:5432"
@@ -12,7 +12,7 @@ services:
       - local_pgdata:/var/lib/postgresql/data
   pgadmin:
     image: dpage/pgadmin4
-    container_name: pgadmin4_container
+    container_name: mood-pgadmin
     restart: always
     ports:
       - "${PGADMIN_PORT}:80"
