@@ -1,0 +1,44 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url('/static/spring.png');
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: Figtree;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.title>.mood {
+    color: #9D005D;
+}
+
+.title>.tracker {
+    color: #51518D;
+}
